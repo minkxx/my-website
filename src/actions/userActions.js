@@ -50,7 +50,7 @@ export const initiatePayment = async (formData) => {
 export const getPaidUsers = async () => {
     try {
         await connectDb();
-        const payments = await Payment.find({ done: true }).sort({ amount: -1 }).limit(5).lean();
+        const payments = await Payment.find({ done: true }).sort({ amount: -1 }).lean();
         return JSON.parse(JSON.stringify(payments));
     } catch (error) {
         console.error("Error fetching paid users:", error);
