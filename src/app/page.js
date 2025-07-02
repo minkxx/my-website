@@ -5,10 +5,11 @@ import Typewriter from "typewriter-effect"
 import { Github, Instagram, Linkedin, Mail, Twitter, Link } from "lucide-react";
 
 export default function Home() {
+  
   return (
     <div className="min-h-screen flex items-center justify-center ">
       <div className="flex flex-col bg-[#00000033] w-full sm:w-2/3 items-center p-10 rounded-lg shadow-2xl gap-5">
-        <Image src={'/images/pfp_my_image.jpg'} alt="profile picture" height={128} width={128} className="rounded-full shadow-2xl shadow-yellow-300" />
+        <Image priority src={'/images/pfp_my_image.jpg'} alt="profile picture" height={128} width={128} className="rounded-full shadow-2xl shadow-yellow-300" />
         <h1 className="text-3xl font-semibold text-center">
           <Typewriter
             options={{
